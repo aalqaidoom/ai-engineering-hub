@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investcorp AI Portfolio — May 08, 2026 — 07:45</title>
+<script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: #F5F7FA; color: #1A1A2E; line-height: 1.5; }
+
+.hero {
+  background: linear-gradient(135deg, #003366 0%, #005599 100%);
+  color: white; padding: 3rem 4rem; position: relative;
+}
+.hero h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 0.3rem; }
+.gold-bar { height: 4px; width: 80px; background: #C5A028; border-radius: 2px; margin: 0.7rem 0 1rem; }
+.hero p { font-size: 1rem; opacity: 0.88; max-width: 700px; }
+.hero .date { position: absolute; top: 1.5rem; right: 3rem; font-size: 0.82rem; opacity: 0.65; }
+
+.container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+
+/* KPIs */
+.kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 2rem 0; }
+.kpi-card {
+  background: white; border-radius: 10px; padding: 1.4rem 1.6rem;
+  border: 1px solid #E8ECF0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.kpi-label { font-size: 0.72rem; font-weight: 700; color: #999; text-transform: uppercase;
+              letter-spacing: 0.06em; margin-bottom: 0.5rem; }
+.kpi-value { font-size: 1.75rem; font-weight: 700; color: #003366; }
+.kpi-sub { font-size: 0.78rem; color: #aaa; margin-top: 0.3rem; }
+
+h2 {
+  color: #003366; font-size: 1.2rem; margin: 2.5rem 0 1rem;
+  border-left: 4px solid #C5A028; padding-left: 0.8rem;
+}
+
+/* Reference anchors */
+.ref-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+.ref-card { background: white; border-radius: 8px; padding: 1rem 1.2rem; border: 1px solid #E8ECF0; }
+.ref-theme { font-size: 0.94rem; font-weight: 700; margin-bottom: 0.5rem; }
+.ref-tickers { font-size: 0.82rem; color: #555; }
+.ref-tickers code {
+  background: #F0F4F8; border-radius: 4px; padding: 2px 6px;
+  font-size: 0.76rem; margin: 2px 2px; display: inline-block; font-family: monospace;
+}
+
+/* Charts */
+.chart-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+.chart-card {
+  background: white; border-radius: 10px; padding: 1rem;
+  border: 1px solid #E8ECF0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.chart-full { background: white; border-radius: 10px; padding: 1rem;
+               border: 1px solid #E8ECF0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+               margin-bottom: 1.5rem; }
+
+/* Tables */
+.table-wrap {
+  background: white; border-radius: 10px; padding: 1.5rem;
+  border: 1px solid #E8ECF0; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem; overflow-x: auto;
+}
+table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+thead th {
+  background: #003366; color: white;
+  padding: 0.65rem 1rem; text-align: left;
+  font-weight: 600; font-size: 0.79rem; white-space: nowrap;
+}
+tbody tr:nth-child(even) { background: #F8FAFC; }
+tbody tr:hover { background: #EEF4FF; transition: background 0.15s; }
+tbody td { padding: 0.65rem 1rem; border-bottom: 1px solid #F0F4F8; vertical-align: middle; }
+
+.footer {
+  text-align: center; padding: 2rem; color: #aaa; font-size: 0.8rem;
+  border-top: 1px solid #E8ECF0; margin-top: 1rem;
+}
+
+@media (max-width: 960px) {
+  .kpi-row, .chart-grid-2, .ref-grid { grid-template-columns: 1fr 1fr; }
+  .hero { padding: 2rem; }
+  .hero .date { position: static; margin-bottom: 0.5rem; display: block; }
+}
+@media (max-width: 600px) {
+  .kpi-row, .chart-grid-2, .ref-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="date">Generated: May 08, 2026 — 07:45</span>
+  <h1>📈 Investcorp AI Portfolio</h1>
+  <div class="gold-bar"></div>
+  <p>
+    Acquisition targets in the AI infrastructure supply chain — semiconductors, data center &amp;
+    networking, cloud &amp; AI applications, and power &amp; energy — with enterprise values between
+    <strong>$50M – $500M</strong>. Thematically anchored to
+    <strong>NVDA · ANET · MSFT · ETN</strong> and their ecosystems.
+  </p>
+</div>
+
+<div class="container">
+
+  <div class="kpi-row">
+        <div class="kpi-card">
+          <div class="kpi-label">Total Opportunities</div>
+          <div class="kpi-value">26</div>
+          <div class="kpi-sub">Companies within $50M–$500M EV</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Themes Covered</div>
+          <div class="kpi-value">4</div>
+          <div class="kpi-sub">AI infrastructure verticals</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Avg Enterprise Value</div>
+          <div class="kpi-value">$232M</div>
+          <div class="kpi-sub">Across all screened companies</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Avg AI Growth Score</div>
+          <div class="kpi-value">38.9 / 100</div>
+          <div class="kpi-sub">Rev growth · Margin · R&D · EV efficiency</div>
+        </div></div>
+
+  <h2>Thematic Anchors (Reference Stocks)</h2>
+  <div class="ref-grid">
+        <div class="ref-card">
+          <div class="ref-theme" style="color:#7B2FBE">💾 AI Semiconductor Ecosystem</div>
+          <div class="ref-tickers"><code>NVDA</code><code>AMD</code><code>ARM</code><code>TSM</code><code>ASML</code><code>MU</code><code>SNDK</code><code>KLAC</code><code>AVGO</code></div>
+        </div>
+        <div class="ref-card">
+          <div class="ref-theme" style="color:#1A6FBF">🌐 Data Center & Networking</div>
+          <div class="ref-tickers"><code>ANET</code><code>CSCO</code><code>CLS</code><code>GLW</code><code>VRT</code></div>
+        </div>
+        <div class="ref-card">
+          <div class="ref-theme" style="color:#0F9D58">☁️ Cloud & AI Applications</div>
+          <div class="ref-tickers"><code>AMZN</code><code>MSFT</code><code>GOOG</code><code>META</code><code>ORCL</code><code>CRWV</code></div>
+        </div>
+        <div class="ref-card">
+          <div class="ref-theme" style="color:#E8A020">⚡ AI Power & Energy</div>
+          <div class="ref-tickers"><code>ETN</code><code>GEV</code><code>PWR</code><code>BE</code><code>OKLO</code></div>
+        </div></div>
+
+  <h2>Market Overview</h2>
+  <div class="chart-grid-2">
+    <div class="chart-card"><div>                            <div id="e067cadd-6c9c-4d9a-b3f2-7de07c4a5d8c" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e067cadd-6c9c-4d9a-b3f2-7de07c4a5d8c")) {                    Plotly.newPlot(                        "e067cadd-6c9c-4d9a-b3f2-7de07c4a5d8c",                        [{"customdata":[["AI Power & Energy"],["AI Semiconductor Ecosystem"],["Cloud & AI Applications"],["Data Center & Networking"]],"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hole":0.45,"hovertemplate":"sector=%{customdata[0]}\u003cbr\u003ecount=%{value}\u003cextra\u003e\u003c\u002fextra\u003e","labels":["AI Power & Energy","AI Semiconductor Ecosystem","Cloud & AI Applications","Data Center & Networking"],"legendgroup":"","marker":{"colors":["#E8A020","#7B2FBE","#0F9D58","#1A6FBF"]},"name":"","showlegend":true,"values":{"dtype":"i1","bdata":"BgcGBw=="},"type":"pie","textinfo":"percent+label","textposition":"outside"}],                        {"template":{"data":{"candlestick":[{"decreasing":{"line":{"color":"#000033"}},"increasing":{"line":{"color":"#000032"}},"type":"candlestick"}],"contourcarpet":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contourcarpet"}],"contour":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contour"}],"heatmap":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"heatmap"}],"histogram2d":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"histogram2d"}],"icicle":[{"textfont":{"color":"white"},"type":"icicle"}],"sankey":[{"textfont":{"color":"#000036"},"type":"sankey"}],"scatter":[{"marker":{"line":{"width":0}},"type":"scatter"}],"table":[{"cells":{"fill":{"color":"#000038"},"font":{"color":"#000037"},"line":{"color":"#000039"}},"header":{"fill":{"color":"#000040"},"font":{"color":"#000036"},"line":{"color":"#000039"}},"type":"table"}],"waterfall":[{"connector":{"line":{"color":"#000036","width":2}},"decreasing":{"marker":{"color":"#000033"}},"increasing":{"marker":{"color":"#000032"}},"totals":{"marker":{"color":"#000034"}},"type":"waterfall"}]},"layout":{"coloraxis":{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorscale":{"diverging":[[0.0,"#000021"],[0.1111111111111111,"#000022"],[0.2222222222222222,"#000023"],[0.3333333333333333,"#000024"],[0.4444444444444444,"#000025"],[0.5555555555555556,"#000026"],[0.6666666666666666,"#000027"],[0.7777777777777778,"#000028"],[0.8888888888888888,"#000029"],[1.0,"#000030"]],"sequential":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"sequentialminus":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorway":["#000001","#000002","#000003","#000004","#000005","#000006","#000007","#000008","#000009","#000010"]}},"legend":{"tracegroupgap":0},"title":{"text":"Opportunities by Theme","font":{"color":"#003366","size":15}},"margin":{"t":50,"b":10,"l":10,"r":10},"showlegend":false,"height":400},                        {"responsive": true}                    )                };            </script>        </div></div>
+    <div class="chart-card"><div>                            <div id="d9b2754d-a1d1-4897-9bec-6da19ad142cd" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("d9b2754d-a1d1-4897-9bec-6da19ad142cd")) {                    Plotly.newPlot(                        "d9b2754d-a1d1-4897-9bec-6da19ad142cd",                        [{"bingroup":"x","hovertemplate":"sector=Cloud & AI Applications\u003cbr\u003eEV ($M)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Cloud & AI Applications","marker":{"color":"#0F9D58","pattern":{"shape":""}},"name":"Cloud & AI Applications","nbinsx":20,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"AAAAAACAWEAAAAAAAIBiQAAAAAAAQFpAAAAAAACweEAAAAAAAKB+QAAAAAAAQHBA"},"xaxis":"x","yaxis":"y","type":"histogram"},{"bingroup":"x","hovertemplate":"sector=AI Semiconductor Ecosystem\u003cbr\u003eEV ($M)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"AI Semiconductor Ecosystem","marker":{"color":"#7B2FBE","pattern":{"shape":""}},"name":"AI Semiconductor Ecosystem","nbinsx":20,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"AAAAAACAVEAAAAAAAMB1QAAAAAAAIHJAAAAAAABgaEAAAAAAABB4QAAAAAAAwHxAAAAAAACgeUA="},"xaxis":"x","yaxis":"y","type":"histogram"},{"bingroup":"x","hovertemplate":"sector=Data Center & Networking\u003cbr\u003eEV ($M)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Data Center & Networking","marker":{"color":"#1A6FBF","pattern":{"shape":""}},"name":"Data Center & Networking","nbinsx":20,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"AAAAAADAXEAAAAAAAOBlQAAAAAAAwFJAAAAAAACAa0AAAAAAAIBrQAAAAAAAYGNAAAAAAABgeEA="},"xaxis":"x","yaxis":"y","type":"histogram"},{"bingroup":"x","hovertemplate":"sector=AI Power & Energy\u003cbr\u003eEV ($M)=%{x}\u003cbr\u003ecount=%{y}\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"AI Power & Energy","marker":{"color":"#E8A020","pattern":{"shape":""}},"name":"AI Power & Energy","nbinsx":20,"orientation":"v","showlegend":true,"x":{"dtype":"f8","bdata":"AAAAAACAWUAAAAAAAEBqQAAAAAAAYGhAAAAAAAAAS0AAAAAAAABNQAAAAAAAoHlA"},"xaxis":"x","yaxis":"y","type":"histogram"}],                        {"template":{"data":{"candlestick":[{"decreasing":{"line":{"color":"#000033"}},"increasing":{"line":{"color":"#000032"}},"type":"candlestick"}],"contourcarpet":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contourcarpet"}],"contour":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contour"}],"heatmap":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"heatmap"}],"histogram2d":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"histogram2d"}],"icicle":[{"textfont":{"color":"white"},"type":"icicle"}],"sankey":[{"textfont":{"color":"#000036"},"type":"sankey"}],"scatter":[{"marker":{"line":{"width":0}},"type":"scatter"}],"table":[{"cells":{"fill":{"color":"#000038"},"font":{"color":"#000037"},"line":{"color":"#000039"}},"header":{"fill":{"color":"#000040"},"font":{"color":"#000036"},"line":{"color":"#000039"}},"type":"table"}],"waterfall":[{"connector":{"line":{"color":"#000036","width":2}},"decreasing":{"marker":{"color":"#000033"}},"increasing":{"marker":{"color":"#000032"}},"totals":{"marker":{"color":"#000034"}},"type":"waterfall"}]},"layout":{"coloraxis":{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorscale":{"diverging":[[0.0,"#000021"],[0.1111111111111111,"#000022"],[0.2222222222222222,"#000023"],[0.3333333333333333,"#000024"],[0.4444444444444444,"#000025"],[0.5555555555555556,"#000026"],[0.6666666666666666,"#000027"],[0.7777777777777778,"#000028"],[0.8888888888888888,"#000029"],[1.0,"#000030"]],"sequential":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"sequentialminus":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorway":["#000001","#000002","#000003","#000004","#000005","#000006","#000007","#000008","#000009","#000010"]}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"EV ($M)"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"count"}},"legend":{"title":{"text":"sector"},"tracegroupgap":0,"font":{"size":11},"orientation":"h","yanchor":"bottom","y":1.08},"title":{"text":"Enterprise Value Distribution ($M)","font":{"color":"#003366","size":15}},"barmode":"relative","margin":{"t":50,"b":10,"l":10,"r":10},"bargap":0.05,"height":400},                        {"responsive": true}                    )                };            </script>        </div></div>
+  </div>
+
+  <h2>AI Growth Score vs Revenue Growth</h2>
+  <div class="chart-full"><div>                            <div id="089b9160-2425-4abe-b01d-f7b509e79791" class="plotly-graph-div" style="height:500px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("089b9160-2425-4abe-b01d-f7b509e79791")) {                    Plotly.newPlot(                        "089b9160-2425-4abe-b01d-f7b509e79791",                        [{"customdata":[["ARQQ",98.0],["RCAT",148.0],["PERI",105.0],["QBTS",395.0],["MGNI",490.0],["BBAI",260.0]],"hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003esector=Cloud & AI Applications\u003cbr\u003eRevenue Growth (%)=%{x:.1f}\u003cbr\u003eAI Score=%{y:.1f}\u003cbr\u003eEV ($M)=%{customdata[1]:.0f}\u003cbr\u003eticker=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Arqit Quantum","Red Cat Holdings","Perion Network","D-Wave Quantum","Magnite","BigBear.ai Holdings"],"legendgroup":"Cloud & AI Applications","marker":{"color":"#0F9D58","size":{"dtype":"f8","bdata":"AAAAAACAWEAAAAAAAIBiQAAAAAAAQFpAAAAAAACweEAAAAAAAKB+QAAAAAAAQHBA"},"sizemode":"area","sizeref":0.30625,"symbol":"circle"},"mode":"markers+text","name":"Cloud & AI Applications","orientation":"v","showlegend":true,"text":["ARQQ","RCAT","PERI","QBTS","MGNI","BBAI"],"x":{"dtype":"f8","bdata":"AAAAAAAANEAAAAAAAIBUQAAAAAAAAELAAAAAAAAANkABAAAAAAAsQAAAAAAAADBA"},"xaxis":"x","y":{"dtype":"f8","bdata":"MzMzMzNzT0AzMzMzM\u002fNJQJqZmZmZ2UZAMzMzMzMzTEBmZmZmZuZHQJqZmZmZGT1A"},"yaxis":"y","type":"scatter","textfont":{"size":9},"textposition":"top center"},{"customdata":[["MRAM",82.0],["CEVA",348.0],["NVTS",290.0],["AEHR",195.0],["AOSL",385.0],["FORM",460.0],["COHU",410.0]],"hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003esector=AI Semiconductor Ecosystem\u003cbr\u003eRevenue Growth (%)=%{x:.1f}\u003cbr\u003eAI Score=%{y:.1f}\u003cbr\u003eEV ($M)=%{customdata[1]:.0f}\u003cbr\u003eticker=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Everspin Technologies","CEVA Inc.","Navitas Semiconductor","Aehr Test Systems","Alpha and Omega Semiconductor","FormFactor Inc.","Cohu Inc."],"legendgroup":"AI Semiconductor Ecosystem","marker":{"color":"#7B2FBE","size":{"dtype":"f8","bdata":"AAAAAACAVEAAAAAAAMB1QAAAAAAAIHJAAAAAAABgaEAAAAAAABB4QAAAAAAAwHxAAAAAAACgeUA="},"sizemode":"area","sizeref":0.30625,"symbol":"circle"},"mode":"markers+text","name":"AI Semiconductor Ecosystem","orientation":"v","showlegend":true,"text":["MRAM","CEVA","NVTS","AEHR","AOSL","FORM","COHU"],"x":{"dtype":"f8","bdata":"AAAAAAAAFEAAAAAAAAAoQAEAAAAAADxAAAAAAAAAMsAAAAAAAAAkQAAAAAAAACBAAAAAAAAAJMA="},"xaxis":"x","y":{"dtype":"f8","bdata":"zczMzMzMQ0CamZmZmRlMQGZmZmZmZkZAzczMzMxMO0CamZmZmZlBQDMzMzMzs0RAzczMzMwMQUA="},"yaxis":"y","type":"scatter","textfont":{"size":9},"textposition":"top center"},{"customdata":[["CRNT",115.0],["AVNW",175.0],["CASA",75.0],["RBBN",220.0],["SIFY",220.0],["CLFD",155.0],["ADTN",390.0]],"hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003esector=Data Center & Networking\u003cbr\u003eRevenue Growth (%)=%{x:.1f}\u003cbr\u003eAI Score=%{y:.1f}\u003cbr\u003eEV ($M)=%{customdata[1]:.0f}\u003cbr\u003eticker=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Ceragon Networks","Aviat Networks","Casa Systems","Ribbon Communications","Sify Technologies","Clearfield Inc.","ADTRAN Holdings"],"legendgroup":"Data Center & Networking","marker":{"color":"#1A6FBF","size":{"dtype":"f8","bdata":"AAAAAADAXEAAAAAAAOBlQAAAAAAAwFJAAAAAAACAa0AAAAAAAIBrQAAAAAAAYGNAAAAAAABgeEA="},"sizemode":"area","sizeref":0.30625,"symbol":"circle"},"mode":"markers+text","name":"Data Center & Networking","orientation":"v","showlegend":true,"text":["CRNT","AVNW","CASA","RBBN","SIFY","CLFD","ADTN"],"x":{"dtype":"f8","bdata":"AAAAAAAAIkAAAAAAAAAYQAAAAAAAADbAAAAAAAAAEMAAAAAAAAAyQAAAAAAAAEDAAQAAAAAALMA="},"xaxis":"x","y":{"dtype":"f8","bdata":"ZmZmZmamRECamZmZmRlFQAAAAAAAgERAzczMzMyMRkDNzMzMzMxCQDMzMzMzszhAZmZmZmZmQ0A="},"yaxis":"y","type":"scatter","textfont":{"size":9},"textposition":"top center"},{"customdata":[["FLUX",102.0],["MNTK",210.0],["MVST",195.0],["BEEM",54.0],["FTCI",58.0],["AMRC",410.0]],"hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003esector=AI Power & Energy\u003cbr\u003eRevenue Growth (%)=%{x:.1f}\u003cbr\u003eAI Score=%{y:.1f}\u003cbr\u003eEV ($M)=%{customdata[1]:.0f}\u003cbr\u003eticker=%{customdata[0]}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Flux Power Holdings","Montauk Renewables","Microvast Holdings","Beam Global","FTC Solar","Ameresco"],"legendgroup":"AI Power & Energy","marker":{"color":"#E8A020","size":{"dtype":"f8","bdata":"AAAAAACAWUAAAAAAAEBqQAAAAAAAYGhAAAAAAAAAS0AAAAAAAABNQAAAAAAAoHlA"},"sizemode":"area","sizeref":0.30625,"symbol":"circle"},"mode":"markers+text","name":"AI Power & Energy","orientation":"v","showlegend":true,"text":["FLUX","MNTK","MVST","BEEM","FTCI","AMRC"],"x":{"dtype":"f8","bdata":"AAAAAAAAMkAAAAAAAAAYQAAAAAAAAChAAAAAAAAAIMAAAAAAAAA4wAAAAAAAABDA"},"xaxis":"x","y":{"dtype":"f8","bdata":"mpmZmZkZQEAzMzMzM7M+QDMzMzMzMz9AzczMzMzMNEDNzMzMzEw2QDMzMzMzsz5A"},"yaxis":"y","type":"scatter","textfont":{"size":9},"textposition":"top center"}],                        {"template":{"data":{"candlestick":[{"decreasing":{"line":{"color":"#000033"}},"increasing":{"line":{"color":"#000032"}},"type":"candlestick"}],"contourcarpet":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contourcarpet"}],"contour":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contour"}],"heatmap":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"heatmap"}],"histogram2d":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"histogram2d"}],"icicle":[{"textfont":{"color":"white"},"type":"icicle"}],"sankey":[{"textfont":{"color":"#000036"},"type":"sankey"}],"scatter":[{"marker":{"line":{"width":0}},"type":"scatter"}],"table":[{"cells":{"fill":{"color":"#000038"},"font":{"color":"#000037"},"line":{"color":"#000039"}},"header":{"fill":{"color":"#000040"},"font":{"color":"#000036"},"line":{"color":"#000039"}},"type":"table"}],"waterfall":[{"connector":{"line":{"color":"#000036","width":2}},"decreasing":{"marker":{"color":"#000033"}},"increasing":{"marker":{"color":"#000032"}},"totals":{"marker":{"color":"#000034"}},"type":"waterfall"}]},"layout":{"coloraxis":{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorscale":{"diverging":[[0.0,"#000021"],[0.1111111111111111,"#000022"],[0.2222222222222222,"#000023"],[0.3333333333333333,"#000024"],[0.4444444444444444,"#000025"],[0.5555555555555556,"#000026"],[0.6666666666666666,"#000027"],[0.7777777777777778,"#000028"],[0.8888888888888888,"#000029"],[1.0,"#000030"]],"sequential":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"sequentialminus":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorway":["#000001","#000002","#000003","#000004","#000005","#000006","#000007","#000008","#000009","#000010"]}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Revenue Growth (%)"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"AI Score"}},"legend":{"title":{"text":"sector"},"tracegroupgap":0,"itemsizing":"constant"},"title":{"text":"AI Growth Score vs Revenue Growth","font":{"color":"#003366","size":15}},"shapes":[{"line":{"color":"#C5A028","dash":"dot"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":55,"y1":55,"yref":"y"}],"annotations":[{"showarrow":false,"text":"High Score threshold","x":1,"xanchor":"right","xref":"x domain","y":55,"yanchor":"bottom","yref":"y"}],"margin":{"t":50,"b":10,"l":10,"r":10},"height":500},                        {"responsive": true}                    )                };            </script>        </div></div>
+
+  <h2>Sector Summary</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>Theme</th><th>Companies</th><th>Avg EV</th>
+        <th>Avg Rev Growth</th><th>Avg Gross Margin</th><th>Avg AI Score</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td>💾 AI Semiconductor Ecosystem</td>
+          <td style="text-align:center;font-weight:600">7</td>
+          <td style="text-align:right">$310M</td>
+          <td style="text-align:right">5.0%</td>
+          <td style="text-align:right">50.0%</td>
+          <td style="text-align:center;font-weight:600">39.8</td>
+        </tr>
+        <tr>
+          <td>🌐 Data Center & Networking</td>
+          <td style="text-align:center;font-weight:600">7</td>
+          <td style="text-align:right">$193M</td>
+          <td style="text-align:right">-5.6%</td>
+          <td style="text-align:right">46.1%</td>
+          <td style="text-align:center;font-weight:600">38.7</td>
+        </tr>
+        <tr>
+          <td>☁️ Cloud & AI Applications</td>
+          <td style="text-align:center;font-weight:600">6</td>
+          <td style="text-align:right">$249M</td>
+          <td style="text-align:right">19.7%</td>
+          <td style="text-align:right">59.3%</td>
+          <td style="text-align:center;font-weight:600">49.0</td>
+        </tr>
+        <tr>
+          <td>⚡ AI Power & Energy</td>
+          <td style="text-align:center;font-weight:600">6</td>
+          <td style="text-align:right">$172M</td>
+          <td style="text-align:right">-0.0%</td>
+          <td style="text-align:right">19.2%</td>
+          <td style="text-align:center;font-weight:600">28.0</td>
+        </tr></tbody>
+    </table></div>
+
+  <h2>Acquisition Target Quadrant</h2>
+  <div class="chart-full"><div>                            <div id="0f5012a9-a154-47ba-8949-178ec0ee71b0" class="plotly-graph-div" style="height:500px; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("0f5012a9-a154-47ba-8949-178ec0ee71b0")) {                    Plotly.newPlot(                        "0f5012a9-a154-47ba-8949-178ec0ee71b0",                        [{"hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003esector=Cloud & AI Applications\u003cbr\u003eAI Growth Score=%{x}\u003cbr\u003eInvestcorp Fit Score=%{y}\u003cbr\u003eEV ($M)=%{marker.size}\u003cbr\u003eticker=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Arqit Quantum","Red Cat Holdings","Perion Network","D-Wave Quantum","Magnite","BigBear.ai Holdings"],"legendgroup":"Cloud & AI Applications","marker":{"color":"#0F9D58","size":{"dtype":"f8","bdata":"AAAAAACAWEAAAAAAAIBiQAAAAAAAQFpAAAAAAACweEAAAAAAAKB+QAAAAAAAQHBA"},"sizemode":"area","sizeref":0.2419753086419753,"symbol":"circle"},"mode":"markers+text","name":"Cloud & AI Applications","orientation":"v","showlegend":true,"text":["ARQQ","RCAT","PERI","QBTS","MGNI","BBAI"],"x":{"dtype":"f8","bdata":"MzMzMzNzT0AzMzMzM\u002fNJQJqZmZmZ2UZAMzMzMzMzTEBmZmZmZuZHQJqZmZmZGT1A"},"xaxis":"x","y":{"dtype":"f8","bdata":"ZmZmZmbmUECamZmZmdlPQDMzMzMzc0lAzczMzMzMR0BmZmZmZiZDQDMzMzMzM0JA"},"yaxis":"y","type":"scatter","textfont":{"size":9},"textposition":"top center"},{"hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003esector=AI Semiconductor Ecosystem\u003cbr\u003eAI Growth Score=%{x}\u003cbr\u003eInvestcorp Fit Score=%{y}\u003cbr\u003eEV ($M)=%{marker.size}\u003cbr\u003eticker=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Everspin Technologies","CEVA Inc.","Navitas Semiconductor","Aehr Test Systems","Alpha and Omega Semiconductor","FormFactor Inc.","Cohu Inc."],"legendgroup":"AI Semiconductor Ecosystem","marker":{"color":"#7B2FBE","size":{"dtype":"f8","bdata":"AAAAAACAVEAAAAAAAMB1QAAAAAAAIHJAAAAAAABgaEAAAAAAABB4QAAAAAAAwHxAAAAAAACgeUA="},"sizemode":"area","sizeref":0.2419753086419753,"symbol":"circle"},"mode":"markers+text","name":"AI Semiconductor Ecosystem","orientation":"v","showlegend":true,"text":["MRAM","CEVA","NVTS","AEHR","AOSL","FORM","COHU"],"x":{"dtype":"f8","bdata":"zczMzMzMQ0CamZmZmRlMQGZmZmZmZkZAzczMzMxMO0CamZmZmZlBQDMzMzMzs0RAzczMzMwMQUA="},"xaxis":"x","y":{"dtype":"f8","bdata":"mpmZmZnZSUBmZmZmZuZIQJqZmZmZ2UdAmpmZmZlZQkAzMzMzM3NBQJqZmZmZWUBAAAAAAAAAQEA="},"yaxis":"y","type":"scatter","textfont":{"size":9},"textposition":"top center"},{"hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003esector=Data Center & Networking\u003cbr\u003eAI Growth Score=%{x}\u003cbr\u003eInvestcorp Fit Score=%{y}\u003cbr\u003eEV ($M)=%{marker.size}\u003cbr\u003eticker=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Ceragon Networks","Aviat Networks","Casa Systems","Ribbon Communications","Sify Technologies","Clearfield Inc.","ADTRAN Holdings"],"legendgroup":"Data Center & Networking","marker":{"color":"#1A6FBF","size":{"dtype":"f8","bdata":"AAAAAADAXEAAAAAAAOBlQAAAAAAAwFJAAAAAAACAa0AAAAAAAIBrQAAAAAAAYGNAAAAAAABgeEA="},"sizemode":"area","sizeref":0.2419753086419753,"symbol":"circle"},"mode":"markers+text","name":"Data Center & Networking","orientation":"v","showlegend":true,"text":["CRNT","AVNW","CASA","RBBN","SIFY","CLFD","ADTN"],"x":{"dtype":"f8","bdata":"ZmZmZmamRECamZmZmRlFQAAAAAAAgERAzczMzMyMRkDNzMzMzMxCQDMzMzMzszhAZmZmZmZmQ0A="},"xaxis":"x","y":{"dtype":"f8","bdata":"AAAAAADASEAAAAAAAIBIQM3MzMzMTEhAzczMzMxMR0CamZmZmRlGQAAAAAAAgEFAZmZmZmZmQEA="},"yaxis":"y","type":"scatter","textfont":{"size":9},"textposition":"top center"},{"hovertemplate":"\u003cb\u003e%{hovertext}\u003c\u002fb\u003e\u003cbr\u003e\u003cbr\u003esector=AI Power & Energy\u003cbr\u003eAI Growth Score=%{x}\u003cbr\u003eInvestcorp Fit Score=%{y}\u003cbr\u003eEV ($M)=%{marker.size}\u003cbr\u003eticker=%{text}\u003cextra\u003e\u003c\u002fextra\u003e","hovertext":["Flux Power Holdings","Montauk Renewables","Microvast Holdings","Beam Global","FTC Solar","Ameresco"],"legendgroup":"AI Power & Energy","marker":{"color":"#E8A020","size":{"dtype":"f8","bdata":"AAAAAACAWUAAAAAAAEBqQAAAAAAAYGhAAAAAAAAAS0AAAAAAAABNQAAAAAAAoHlA"},"sizemode":"area","sizeref":0.2419753086419753,"symbol":"circle"},"mode":"markers+text","name":"AI Power & Energy","orientation":"v","showlegend":true,"text":["FLUX","MNTK","MVST","BEEM","FTCI","AMRC"],"x":{"dtype":"f8","bdata":"mpmZmZkZQEAzMzMzM7M+QDMzMzMzMz9AzczMzMzMNEDNzMzMzEw2QDMzMzMzsz5A"},"xaxis":"x","y":{"dtype":"f8","bdata":"zczMzMwMR0AAAAAAAIBEQJqZmZmZmUNAmpmZmZlZQ0BmZmZmZuZBQAAAAAAAgDpA"},"yaxis":"y","type":"scatter","textfont":{"size":9},"textposition":"top center"}],                        {"template":{"data":{"candlestick":[{"decreasing":{"line":{"color":"#000033"}},"increasing":{"line":{"color":"#000032"}},"type":"candlestick"}],"contourcarpet":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contourcarpet"}],"contour":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"contour"}],"heatmap":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"heatmap"}],"histogram2d":[{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"type":"histogram2d"}],"icicle":[{"textfont":{"color":"white"},"type":"icicle"}],"sankey":[{"textfont":{"color":"#000036"},"type":"sankey"}],"scatter":[{"marker":{"line":{"width":0}},"type":"scatter"}],"table":[{"cells":{"fill":{"color":"#000038"},"font":{"color":"#000037"},"line":{"color":"#000039"}},"header":{"fill":{"color":"#000040"},"font":{"color":"#000036"},"line":{"color":"#000039"}},"type":"table"}],"waterfall":[{"connector":{"line":{"color":"#000036","width":2}},"decreasing":{"marker":{"color":"#000033"}},"increasing":{"marker":{"color":"#000032"}},"totals":{"marker":{"color":"#000034"}},"type":"waterfall"}]},"layout":{"coloraxis":{"colorscale":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorscale":{"diverging":[[0.0,"#000021"],[0.1111111111111111,"#000022"],[0.2222222222222222,"#000023"],[0.3333333333333333,"#000024"],[0.4444444444444444,"#000025"],[0.5555555555555556,"#000026"],[0.6666666666666666,"#000027"],[0.7777777777777778,"#000028"],[0.8888888888888888,"#000029"],[1.0,"#000030"]],"sequential":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]],"sequentialminus":[[0.0,"#000011"],[0.1111111111111111,"#000012"],[0.2222222222222222,"#000013"],[0.3333333333333333,"#000014"],[0.4444444444444444,"#000015"],[0.5555555555555556,"#000016"],[0.6666666666666666,"#000017"],[0.7777777777777778,"#000018"],[0.8888888888888888,"#000019"],[1.0,"#000020"]]},"colorway":["#000001","#000002","#000003","#000004","#000005","#000006","#000007","#000008","#000009","#000010"]}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"AI Growth Score"}},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Investcorp Fit Score"}},"legend":{"title":{"text":"sector"},"tracegroupgap":0,"itemsizing":"constant"},"title":{"text":"Investcorp Fit Score vs AI Growth Score","font":{"color":"#003366","size":15}},"shapes":[{"line":{"color":"#CCCCCC","dash":"dot"},"type":"line","x0":50,"x1":50,"xref":"x","y0":0,"y1":1,"yref":"y domain"},{"line":{"color":"#CCCCCC","dash":"dot"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":50,"y1":50,"yref":"y"}],"annotations":[{"font":{"color":"#003366","size":11},"showarrow":false,"text":"\ud83d\udfe2 Prime Targets","x":75,"y":88},{"font":{"color":"#888","size":11},"showarrow":false,"text":"\ud83d\udfe1 Value Plays","x":25,"y":88},{"font":{"color":"#888","size":11},"showarrow":false,"text":"\ud83d\udfe0 Growth Watch","x":75,"y":12},{"font":{"color":"#CCC","size":11},"showarrow":false,"text":"\ud83d\udd34 Monitor","x":25,"y":12}],"margin":{"t":50,"b":10,"l":10,"r":10},"height":500},                        {"responsive": true}                    )                };            </script>        </div></div>
+
+  <h2>🎯 Ranked Acquisition Shortlist</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th>#</th><th>Ticker</th><th>Company</th><th>Theme</th>
+        <th>Enterprise Value</th><th>Rev Growth</th><th>Gross Margin</th>
+        <th>AI Score</th><th>Fit Score</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#1</td>
+          <td><strong style="color:#003366">ARQQ</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Arqit Quantum</td>
+          <td><span style="background:#0F9D58;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">☁️ Cloud & AI Applications</span></td>
+          <td style="text-align:right;font-weight:600">$98M</td>
+          <td style="text-align:right">20.0%</td>
+          <td style="text-align:right">88.0%</td>
+          <td style="min-width:140px">🟡 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:63%;background:#F39C12;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">63</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:68%;background:#F39C12;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">68</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#2</td>
+          <td><strong style="color:#003366">RCAT</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Red Cat Holdings</td>
+          <td><span style="background:#0F9D58;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">☁️ Cloud & AI Applications</span></td>
+          <td style="text-align:right;font-weight:600">$148M</td>
+          <td style="text-align:right">82.0%</td>
+          <td style="text-align:right">30.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:52%;background:#F39C12;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">52</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:64%;background:#F39C12;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">64</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#3</td>
+          <td><strong style="color:#003366">MRAM</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Everspin Technologies</td>
+          <td><span style="background:#7B2FBE;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">💾 AI Semiconductor Ecosystem</span></td>
+          <td style="text-align:right;font-weight:600">$82M</td>
+          <td style="text-align:right">5.0%</td>
+          <td style="text-align:right">52.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:40%;background:#F39C12;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">40</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:52%;background:#F39C12;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">52</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#4</td>
+          <td><strong style="color:#003366">PERI</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Perion Network</td>
+          <td><span style="background:#0F9D58;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">☁️ Cloud & AI Applications</span></td>
+          <td style="text-align:right;font-weight:600">$105M</td>
+          <td style="text-align:right">-36.0%</td>
+          <td style="text-align:right">87.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:46%;background:#F39C12;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">46</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:51%;background:#F39C12;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">51</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#5</td>
+          <td><strong style="color:#003366">CEVA</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">CEVA Inc.</td>
+          <td><span style="background:#7B2FBE;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">💾 AI Semiconductor Ecosystem</span></td>
+          <td style="text-align:right;font-weight:600">$348M</td>
+          <td style="text-align:right">12.0%</td>
+          <td style="text-align:right">87.0%</td>
+          <td style="min-width:140px">🟡 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:56%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">56</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:50%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">50</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#6</td>
+          <td><strong style="color:#003366">CRNT</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Ceragon Networks</td>
+          <td><span style="background:#1A6FBF;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">🌐 Data Center & Networking</span></td>
+          <td style="text-align:right;font-weight:600">$115M</td>
+          <td style="text-align:right">9.0%</td>
+          <td style="text-align:right">35.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:41%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">41</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:50%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">50</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#7</td>
+          <td><strong style="color:#003366">AVNW</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Aviat Networks</td>
+          <td><span style="background:#1A6FBF;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">🌐 Data Center & Networking</span></td>
+          <td style="text-align:right;font-weight:600">$175M</td>
+          <td style="text-align:right">6.0%</td>
+          <td style="text-align:right">53.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:42%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">42</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:49%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">49</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#8</td>
+          <td><strong style="color:#003366">CASA</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Casa Systems</td>
+          <td><span style="background:#1A6FBF;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">🌐 Data Center & Networking</span></td>
+          <td style="text-align:right;font-weight:600">$75M</td>
+          <td style="text-align:right">-22.0%</td>
+          <td style="text-align:right">55.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:41%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">41</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:49%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">49</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#9</td>
+          <td><strong style="color:#003366">NVTS</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Navitas Semiconductor</td>
+          <td><span style="background:#7B2FBE;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">💾 AI Semiconductor Ecosystem</span></td>
+          <td style="text-align:right;font-weight:600">$290M</td>
+          <td style="text-align:right">28.0%</td>
+          <td style="text-align:right">43.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:45%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">45</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:48%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">48</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#10</td>
+          <td><strong style="color:#003366">QBTS</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">D-Wave Quantum</td>
+          <td><span style="background:#0F9D58;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">☁️ Cloud & AI Applications</span></td>
+          <td style="text-align:right;font-weight:600">$395M</td>
+          <td style="text-align:right">22.0%</td>
+          <td style="text-align:right">70.0%</td>
+          <td style="min-width:140px">🟡 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:56%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">56</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:48%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">48</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#11</td>
+          <td><strong style="color:#003366">RBBN</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Ribbon Communications</td>
+          <td><span style="background:#1A6FBF;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">🌐 Data Center & Networking</span></td>
+          <td style="text-align:right;font-weight:600">$220M</td>
+          <td style="text-align:right">-4.0%</td>
+          <td style="text-align:right">56.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:45%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">45</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:47%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">47</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#12</td>
+          <td><strong style="color:#003366">FLUX</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Flux Power Holdings</td>
+          <td><span style="background:#E8A020;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">⚡ AI Power & Energy</span></td>
+          <td style="text-align:right;font-weight:600">$102M</td>
+          <td style="text-align:right">18.0%</td>
+          <td style="text-align:right">20.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:32%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">32</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:46%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">46</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#13</td>
+          <td><strong style="color:#003366">SIFY</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Sify Technologies</td>
+          <td><span style="background:#1A6FBF;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">🌐 Data Center & Networking</span></td>
+          <td style="text-align:right;font-weight:600">$220M</td>
+          <td style="text-align:right">18.0%</td>
+          <td style="text-align:right">32.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:38%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">38</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:44%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">44</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#14</td>
+          <td><strong style="color:#003366">MNTK</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Montauk Renewables</td>
+          <td><span style="background:#E8A020;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">⚡ AI Power & Energy</span></td>
+          <td style="text-align:right;font-weight:600">$210M</td>
+          <td style="text-align:right">6.0%</td>
+          <td style="text-align:right">40.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:31%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">31</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:41%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">41</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#15</td>
+          <td><strong style="color:#003366">MVST</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Microvast Holdings</td>
+          <td><span style="background:#E8A020;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">⚡ AI Power & Energy</span></td>
+          <td style="text-align:right;font-weight:600">$195M</td>
+          <td style="text-align:right">12.0%</td>
+          <td style="text-align:right">12.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:31%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">31</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:39%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">39</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#16</td>
+          <td><strong style="color:#003366">BEEM</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Beam Global</td>
+          <td><span style="background:#E8A020;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">⚡ AI Power & Energy</span></td>
+          <td style="text-align:right;font-weight:600">$54M</td>
+          <td style="text-align:right">-8.0%</td>
+          <td style="text-align:right">15.0%</td>
+          <td style="min-width:140px">🔴 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:21%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">21</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:39%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">39</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#17</td>
+          <td><strong style="color:#003366">MGNI</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Magnite</td>
+          <td><span style="background:#0F9D58;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">☁️ Cloud & AI Applications</span></td>
+          <td style="text-align:right;font-weight:600">$490M</td>
+          <td style="text-align:right">14.0%</td>
+          <td style="text-align:right">63.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:48%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">48</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:38%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">38</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#18</td>
+          <td><strong style="color:#003366">AEHR</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Aehr Test Systems</td>
+          <td><span style="background:#7B2FBE;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">💾 AI Semiconductor Ecosystem</span></td>
+          <td style="text-align:right;font-weight:600">$195M</td>
+          <td style="text-align:right">-18.0%</td>
+          <td style="text-align:right">50.0%</td>
+          <td style="min-width:140px">🔴 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:27%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">27</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:37%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">37</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#19</td>
+          <td><strong style="color:#003366">BBAI</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">BigBear.ai Holdings</td>
+          <td><span style="background:#0F9D58;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">☁️ Cloud & AI Applications</span></td>
+          <td style="text-align:right;font-weight:600">$260M</td>
+          <td style="text-align:right">16.0%</td>
+          <td style="text-align:right">18.0%</td>
+          <td style="min-width:140px">🔴 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:29%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">29</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:36%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">36</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#20</td>
+          <td><strong style="color:#003366">FTCI</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">FTC Solar</td>
+          <td><span style="background:#E8A020;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">⚡ AI Power & Energy</span></td>
+          <td style="text-align:right;font-weight:600">$58M</td>
+          <td style="text-align:right">-24.0%</td>
+          <td style="text-align:right">10.0%</td>
+          <td style="min-width:140px">🔴 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:22%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">22</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:36%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">36</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#21</td>
+          <td><strong style="color:#003366">CLFD</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Clearfield Inc.</td>
+          <td><span style="background:#1A6FBF;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">🌐 Data Center & Networking</span></td>
+          <td style="text-align:right;font-weight:600">$155M</td>
+          <td style="text-align:right">-32.0%</td>
+          <td style="text-align:right">40.0%</td>
+          <td style="min-width:140px">🔴 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:25%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">25</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:35%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">35</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#22</td>
+          <td><strong style="color:#003366">AOSL</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Alpha and Omega Semiconductor</td>
+          <td><span style="background:#7B2FBE;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">💾 AI Semiconductor Ecosystem</span></td>
+          <td style="text-align:right;font-weight:600">$385M</td>
+          <td style="text-align:right">10.0%</td>
+          <td style="text-align:right">26.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:35%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">35</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:35%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">35</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#23</td>
+          <td><strong style="color:#003366">ADTN</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">ADTRAN Holdings</td>
+          <td><span style="background:#1A6FBF;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">🌐 Data Center & Networking</span></td>
+          <td style="text-align:right;font-weight:600">$390M</td>
+          <td style="text-align:right">-14.0%</td>
+          <td style="text-align:right">52.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:39%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">39</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:33%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">33</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#24</td>
+          <td><strong style="color:#003366">FORM</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">FormFactor Inc.</td>
+          <td><span style="background:#7B2FBE;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">💾 AI Semiconductor Ecosystem</span></td>
+          <td style="text-align:right;font-weight:600">$460M</td>
+          <td style="text-align:right">8.0%</td>
+          <td style="text-align:right">45.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:41%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">41</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:33%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">33</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#25</td>
+          <td><strong style="color:#003366">COHU</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Cohu Inc.</td>
+          <td><span style="background:#7B2FBE;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">💾 AI Semiconductor Ecosystem</span></td>
+          <td style="text-align:right;font-weight:600">$410M</td>
+          <td style="text-align:right">-10.0%</td>
+          <td style="text-align:right">47.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:34%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">34</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:32%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">32</span></div></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;font-weight:700;color:#003366">#26</td>
+          <td><strong style="color:#003366">AMRC</strong></td>
+          <td style="max-width:180px;font-size:0.86rem">Ameresco</td>
+          <td><span style="background:#E8A020;color:white;padding:2px 8px;border-radius:12px;font-size:0.76rem;white-space:nowrap">⚡ AI Power & Energy</span></td>
+          <td style="text-align:right;font-weight:600">$410M</td>
+          <td style="text-align:right">-4.0%</td>
+          <td style="text-align:right">18.0%</td>
+          <td style="min-width:140px">🟠 <div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:31%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">31</span></div></td>
+          <td style="min-width:140px"><div style="display:flex;align-items:center;gap:6px"><div style="flex:1;background:#eee;border-radius:4px;height:8px"><div style="width:26%;background:#E74C3C;height:8px;border-radius:4px"></div></div><span style="font-size:0.84rem;font-weight:700;min-width:32px">26</span></div></td>
+        </tr></tbody>
+    </table></div>
+
+</div>
+
+<div class="footer">
+  Data sourced via Yahoo Finance &nbsp;·&nbsp; Generated May 08, 2026 — 07:45<br>
+  AI Score: revenue growth (35%) + gross margin (25%) + R&amp;D intensity (20%) + EV efficiency (20%)<br>
+  Fit Score: AI score (40%) + EV attractiveness (25%) + revenue growth (20%) + gross margin (10%) + net cash (5%)<br>
+  For investment research purposes only — not financial advice.
+</div>
+
+</body>
+</html>
