@@ -80,8 +80,10 @@ st.markdown(
         <h1>📈 Investcorp AI Portfolio</h1>
         <div class="gold-line"></div>
         <p>
-            Identifying high-growth AI companies and real estate assets with enterprise values
-            between <strong>$50M – $500M</strong> for strategic acquisition by Investcorp.
+            Identifying acquisition targets in the AI infrastructure supply chain — semiconductors,
+            data center networking, cloud platforms, and power & energy — with enterprise values
+            between <strong>$50M – $500M</strong>. Thematically anchored to
+            <strong>NVDA · ANET · MSFT · ETN</strong> and their ecosystems.
         </p>
     </div>
     """,
@@ -106,9 +108,9 @@ with col2:
     st.markdown(
         f"""
         <div class="card">
-            <div class="badge">Sectors</div>
-            <h3>{len(SECTORS)} Focus Areas</h3>
-            <p>Tech / Software · Data Centers · Real Estate · Healthcare AI</p>
+            <div class="badge">Themes</div>
+            <h3>{len(SECTORS)} AI Themes</h3>
+            <p>Semiconductors · Data Center & Networking · Cloud & AI Apps · Power & Energy</p>
         </div>
         """,
         unsafe_allow_html=True,
@@ -147,8 +149,8 @@ nav_col1, nav_col2 = st.columns(2)
 
 with nav_col1:
     for label, icon, desc in [
-        ("Overview", "📊", "Sector breakdown, EV distribution, and key market metrics at a glance."),
-        ("AI Companies", "💻", "Live screener for AI software, SaaS, and infrastructure companies within the target EV range."),
+        ("Overview", "📊", "Cross-theme EV distribution, AI score scatter, and sector summary at a glance."),
+        ("AI Companies", "💻", "Filter all four themes by EV, revenue growth, and AI score with company deep-dives."),
     ]:
         st.markdown(
             f"""
@@ -162,8 +164,8 @@ with nav_col1:
 
 with nav_col2:
     for label, icon, desc in [
-        ("Real Estate", "🏢", "AI-adjacent REITs and industrial properties benefiting from the AI buildout."),
-        ("Acquisition Targets", "🎯", "Ranked acquisition shortlist with Investcorp Fit Score and exportable CSV report."),
+        ("Power & Energy", "⚡", "Small-cap plays in the AI power theme — same space as ETN, GEV, PWR, BE, OKLO."),
+        ("Acquisition Targets", "🎯", "Ranked acquisition shortlist scored on AI growth, EV attractiveness, and balance-sheet health."),
     ]:
         st.markdown(
             f"""

@@ -17,8 +17,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Exclude Real Estate sector — handled on its own page
-COMPANY_SECTORS = {k: v for k, v in SECTORS.items() if k != "Real Estate (AI-Adjacent)"}
+COMPANY_SECTORS = SECTORS
 
 
 @st.cache_data(ttl=3600, show_spinner=False)
